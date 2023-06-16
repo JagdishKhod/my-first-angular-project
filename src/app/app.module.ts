@@ -9,6 +9,7 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { UserListComponent } from './user-list/user-list.component';
 import { StudentListComponent } from './student-list/student-list.component';
 import { CountryListComponent } from './country-list/country-list.component';
+import { UserAuthModule } from './user-auth/user-auth.module';
 
 @NgModule({
   declarations: [
@@ -19,12 +20,14 @@ import { CountryListComponent } from './country-list/country-list.component';
     UserListComponent,
     StudentListComponent,
     CountryListComponent,
+  
    
   
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    UserAuthModule
   ],
   providers: [],
   bootstrap: [AppComponent]

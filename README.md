@@ -25,3 +25,9 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+Question:
+what is inline style and inline template?
+2.why we do inline style and inline template?- when in our component there is minimum style then we are not going to create the seprate file for it 
+at such time e use inline style and inline template.
+Q.3.
