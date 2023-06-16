@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { AboutComponent } from './components/AboutComponent/about.component';
 import { FooterComponent } from './components/FooterComponent/footer.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
+import { UserListComponent } from './user-list/user-list.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
     AboutComponent,
     FooterComponent,
     NavBarComponent,
+    UserListComponent,
    
   
   ],
