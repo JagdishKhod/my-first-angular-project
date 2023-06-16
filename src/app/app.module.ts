@@ -7,6 +7,8 @@ import { AboutComponent } from './components/AboutComponent/about.component';
 import { FooterComponent } from './components/FooterComponent/footer.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { UserListComponent } from './user-list/user-list.component';
+import { StudentListComponent } from './student-list/student-list.component';
+import { CountryListComponent } from './country-list/country-list.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +17,8 @@ import { UserListComponent } from './user-list/user-list.component';
     FooterComponent,
     NavBarComponent,
     UserListComponent,
+    StudentListComponent,
+    CountryListComponent,
    
   
   ],
