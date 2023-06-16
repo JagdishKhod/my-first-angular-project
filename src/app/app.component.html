@@ -1,6 +1,13 @@
 <h2>{{title}}</h2>
 <h1>This is Component</h1>
-<h3>{{getData()}}</h3>
+<button (click)="getData('Hello')">Call Function</button> <br>
+<br>
+<input type="text" #box (keyup)="getData(box.value)" placeholder="event keyup"> 
+<br><hr>
+
+
+.............................................................
+<!-- <h3>{{getData()}}</h3> -->
 <h3>{{title=="Lets Learn JAVA"}} </h3> 
 <!-- is flase because in component.ts title name is "Lets Learn Angualr" -->
 <h3 class="{{title}}">Title is: "{{title}}"</h3>
@@ -19,4 +26,3 @@
 <footer-component></footer-component>
 <app-nav-bar></app-nav-bar>
 <!-- ........**********............. -->
-<button (click)="getData">Call Function</button>

@@ -9,9 +9,9 @@ import { Component } from '@angular/core';
 )
 export class AppComponent {
   title = 'Lets Learn Angular';
-  getData()  
+  getData(val:string)  
   {
-    console.warn("Function Called Successfully..!")
+    console.warn(val)
   }
   
 }
