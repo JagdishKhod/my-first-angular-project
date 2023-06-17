@@ -9,9 +9,8 @@ import { Component } from '@angular/core';
 )
 export class AppComponent {
   title = 'Lets Learn Angular';
-  getData(val:string)  
-  {
+ getData(val:string){
     console.warn(val)
-  }
+ }
   
 }

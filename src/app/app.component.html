@@ -4,7 +4,13 @@
 <br>
 <input type="text" #box (keyup)="getData(box.value)" placeholder="event keyup"> 
 <br><hr>
-
+<button (click)="getData('Hey')">call Function</button> <br>
+<input type="text" #box (keydown)="getData(box.value)" placeholder="Event keyDown">
+<br><hr>
+ <button (click)="getData('Ok')">Call Function</button> <br>
+ <input type="text" #box (blur)="getData(box.value)" placeholder="event blur">
+ <br><hr>
+ 
 
 .............................................................
 <!-- <h3>{{getData()}}</h3> -->
