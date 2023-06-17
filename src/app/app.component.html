@@ -5,9 +5,13 @@
 <input type="text" #box (keyup)="getData(box.value)" placeholder="event keyup"> <br><br>
 <input type="text" #box1 (keydown)="getData(box1.value)" placeholder="Event keyDown"><br><br>
 <input type="text" #box2 (blur)="getData(box2.value)" placeholder="event blur"><br><br>
-<input type="text" #table (keypress)="getData(table.value)" placeholder="event keypress">
+<input type="text" #box3 (keypress)="getData(box3.value)" placeholder="event keypress"><br><br>
+<input type="text" #box4 (keypress)="getData(box4.value)" (blur)="getData(box4.value)" placeholder="event keypress and blur">
 
-<h3 (mouseover)="getData('Intresting')">This is mouseover Event</h3>
+<h1 (mouseover)="getData('mouseover')">This is mouseover Event</h1>
+<h1 (mouseleave)="getData('mouseleave')">Mouse Leave event</h1>
+<h1 (mouseover)="getData ('mouseover')" (mouseleave)="getData('mouseleave')">both mouseover and mouseleave</h1>
+
 .............................................................
 <!-- <h3>{{getData()}}</h3> -->
 <h3>{{title=="Lets Learn JAVA"}} </h3> 
