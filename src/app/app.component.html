@@ -2,16 +2,12 @@
 <h1>This is Component</h1>
 <button (click)="getData('Hello')">Call Function</button> <br>
 <br>
-<input type="text" #box (keyup)="getData(box.value)" placeholder="event keyup"> 
-<br><hr>
-<button (click)="getData('Hey')">call Function</button> <br>
-<input type="text" #box (keydown)="getData(box.value)" placeholder="Event keyDown">
-<br><hr>
- <button (click)="getData('Ok')">Call Function</button> <br>
- <input type="text" #box (blur)="getData(box.value)" placeholder="event blur">
- <br><hr>
- 
+<input type="text" #box (keyup)="getData(box.value)" placeholder="event keyup"> <br><br>
+<input type="text" #box1 (keydown)="getData(box1.value)" placeholder="Event keyDown"><br><br>
+<input type="text" #box2 (blur)="getData(box2.value)" placeholder="event blur"><br><br>
+<input type="text" #table (keypress)="getData(table.value)" placeholder="event keypress">
 
+<h3 (mouseover)="getData('Intresting')">This is mouseover Event</h3>
 .............................................................
 <!-- <h3>{{getData()}}</h3> -->
 <h3>{{title=="Lets Learn JAVA"}} </h3> 
