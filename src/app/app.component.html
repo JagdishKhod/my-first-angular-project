@@ -6,13 +6,24 @@
 <input type="text" #box1 (keydown)="getData(box1.value)" placeholder="Event keyDown"><br><br>
 <input type="text" #box2 (blur)="getData(box2.value)" placeholder="event blur"><br><br>
 <input type="text" #box3 (keypress)="getData(box3.value)" placeholder="event keypress"><br><br>
-<input type="text" #box4 (keypress)="getData(box4.value)" (blur)="getData(box4.value)" placeholder="event keypress and blur">
+<input type="text" #box4 (keypress)="getData(box4.value)" (blur)="getData(box4.value)" placeholder="event keypress and blur"> <hr>
 
 <h1 (mouseover)="getData('mouseover')">This is mouseover Event</h1>
-<h1 (mouseleave)="getData('mouseleave')">Mouse Leave event</h1>
-<h1 (mouseover)="getData ('mouseover')" (mouseleave)="getData('mouseleave')">both mouseover and mouseleave</h1>
+<h1 (mouseleave)="getData('mouseleave')">Mouse Leave event</h1> 
+<h1 (mouseover)="getData ('mouseover')" (mouseleave)="getData('mouseleave')">both mouseover and mouseleave</h1> <hr>
 
-.............................................................
+
+<h3>#Get Input Box vlaue and Display</h3>
+<!-- Get Input Box vlaue and Display -->
+<input type="text"
+ #box5
+placeholder="Enter Name" name="name"/> 
+<button (click)="getData(box5.name)">click</button>
+<p> The Value in Box is :  {{displayVal}} </p>
+
+&nbsp;<br> <br><hr>
+
+
 <!-- <h3>{{getData()}}</h3> -->
 <h3>{{title=="Lets Learn JAVA"}} </h3> 
 <!-- is flase because in component.ts title name is "Lets Learn Angualr" -->
