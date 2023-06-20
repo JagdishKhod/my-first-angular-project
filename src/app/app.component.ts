@@ -17,9 +17,9 @@ export class AppComponent {
     this.displayVal=val
  }
  count=0;
- counter(type:any)
+ counter(type:string)
  {
-type===1 ? this.count++ : this.count-- ;      // "?" --is ternary operator in angular and ":" is treated as else 
+type==='add' ? this.count++ : this.count-- ;      // "?" --is ternary operator in angular and ":" is treated as else 
  
  }
 }

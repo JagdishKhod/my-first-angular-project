@@ -24,11 +24,11 @@ placeholder="Enter Name" name="name"/>
 
 <!-- Counter on click on button -->
 <h3> Counter on click on button</h3>
-<button (click)="counter(1)" >++</button> <br>
+<button (click)="counter('add')" >++</button> <br>
 <p>
     Count : {{count}}
 </p>
-<button (click)="counter(2)">--</button>
+<button (click)="counter('minus')" [disabled]="count === 0">--</button>
 <br><hr>
 
 
