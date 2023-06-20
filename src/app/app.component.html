@@ -20,8 +20,16 @@
 placeholder="Enter Name" name="name"/> 
 <button (click)="getData(box5.value)">click</button>
 <p> The Value in Box is :  {{displayVal}} </p>
+<br><hr>
 
-&nbsp;<br> <br><hr>
+<!-- Counter on click on button -->
+<h3> Counter on click on button</h3>
+<button (click)="counter(1)" >++</button> <br>
+<p>
+    Count : {{count}}
+</p>
+<button (click)="counter(2)">--</button>
+<br><hr>
 
 
 <!-- <h3>{{getData()}}</h3> -->

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { count } from 'rxjs';
 
 @Component(
   {
@@ -15,5 +16,10 @@ export class AppComponent {
     console.warn(val)
     this.displayVal=val
  }
+ count=0;
+ counter(type:any)
+ {
+type===1 ? this.count++ : this.count-- ;      // "?" --is ternary operator in angular and ":" is treated as else 
  
+ }
 }
